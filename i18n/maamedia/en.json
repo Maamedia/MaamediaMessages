@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mito"		
+		]
+	},
+	"centralauth-groupname": "Maamedia",
+	"content-model-flow-board": "StructuredDiscussions board",
+	"maamediamessages-description": "MediaWiki messages, scripts and hooks specific for Maamedia",
+	"maamedia-categories": "Categories",
+  "maamedia-sidebar-donate": "Donate",
+  "maamedia-donate": "Donate to Maamedia",
+  "maamedia-donatepage": "m:Donate",
+  "maamedia-survey-agree": "Agree",
+  "maamedia-survey-disagree": "Disagree",
+  "group-abuse": "Abuse team",
+  "group-abuse-member": "{{GENDER:$1|abuse team}}",
+  "group-proxybot": "Proxy Bot",
+  "group-proxybot-member": "proxy bot",
+  "grouppage-proxybot": "m:User:Proxybot",
+ 	"group-translator": "Translators",
+	"group-translator-member": "translator",
+	"group-translationadmin": "Translation administrators",
+	"group-translationadmin-member": "translation administrator",
+ 	"shared-repo-name-shared-commons": "Maamedia Commons-Wiki",
+	"sitematrix": "List of Maamedia wikis",
+	"sitematrix-summary": "This special page lists all Maamedia wikis.",
+	"sitematrix-desc": "Displays a [[Special:SiteMatrix|list of Maamedia wikis]]",
+	"sitematrix-others": "Other Maamedia wikis",
+	"sitesupport": "",
+	"sitesupport-url": "",
+	"termsofservice": "Terms of Use",
+	"termsofservicepage": "m:Terms of Use",
+	"tooltip-n-sitesupport": ""
+  "maamedia-founder-1": "Puma"
+  "maamedia-founder-2": "Mito"
+}
