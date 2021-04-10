@@ -1,0 +1,68 @@
+{
+	"name": "MaamediaMessages",
+	"author": [
+		"Mito"
+	],
+	"url": "//github.com/Maamedia/MaamediaMessages",
+	"descriptionmsg": "maamediamessages-description",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"MessagesDirs": {
+		"MaamediaMessages": [
+			"i18n/maamedia"
+		],
+		"MaamediaOverrideMessages": [
+			"i18n/overrides"
+		],
+		"MaamediaLocalizedProjectNames": [
+			"i18n/maamediaprojectnames"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"MaamediaMessagesAliases": "includes/MaamediaMessagesAliases.php"
+	},
+	"AutoloadClasses": {
+		"MaamediaIRCRCFeedFormatter": "includes/MaameiddaIRCRCFeedFormatter.php",
+		"MaamediaMessagesHooks": "includes/MaamediaMessagesHooks.php",
+		"SpecialMaamediaSurvey": "includes/SpecialMaamediaSurvey.php"
+	},
+	"SpecialPages": {
+		"MaamediaSurvey": "SpecialMaamediaSurvey"
+	},
+	"Hooks": {
+		"AbuseFilterShouldFilterAction": [
+			"MaamediaMessagesHooks::onAbuseFilterShouldFilterAction"
+		],
+		"MessageCache::get": [
+			"MaamediaMessagesHooks::onMessageCacheGet"
+		],
+		"TitleReadWhitelist": [
+			"MaamediaMessagesHooks::onTitleReadWhitelist"
+		],
+		"HtmlPageLinkRendererEnd": [
+			"MaamediaMessagesHooks::onHtmlPageLinkRendererEnd"
+		],
+		"InitializeArticleMaybeRedirect": [
+			"MaamediaMessagesHooks::onInitializeArticleMaybeRedirect"
+		],
+		"GlobalUserPageWikis": [
+			"MaamediaMessagesHooks::onGlobalUserPageWikis"
+		],
+		"MimeMagicInit": [
+			"MaamediaMessagesHooks::onMimeMagicInit"
+		],
+		"SiteNoticeAfter": [
+			"MaamediaMessagesHooks::onSiteNoticeAfter"
+		],
+		"SkinAddFooterLinks": [
+			"MaamediaMessagesHooks::onSkinAddFooterLinks"
+		],
+		"UserGetRightsRemove": [
+			"MaamediaMessagesHooks::onUserGetRightsRemove"
+		]
+	},
+	"ConfigRegistry": {
+		"MaamediaMessages": "GlobalVarConfig::newInstance"
+	},
+	"manifest_version": 2
+}
