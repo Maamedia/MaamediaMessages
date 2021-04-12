@@ -3,7 +3,7 @@
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Shell\Shell;
 
-class MaamediaMagicHooks {
+class MaamediaMessagesHooks {
 	/**
 	 * Avoid filtering automatic account creation
 	 *
