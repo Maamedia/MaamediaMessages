@@ -3,66 +3,99 @@
 	"author": [
 		"Mito"
 	],
-	"url": "//github.com/Maamedia/MaamediaMessages",
-	"descriptionmsg": "maamediamessages-description",
-	"license-name": "GPL-3.0-or-later",
+	"url": "https://github.com/maamedia/MaamediaMessages",
+	"descriptionmsg": "maamediamessages-desc",
+	"license-name": "GPL-2.0-or-later",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
 	"MessagesDirs": {
 		"MaamediaMessages": [
-			"i18n/maamedia"
-		],
-		"MaamediaOverrideMessages": [
-			"i18n/overrides"
-		],
-		"MaamediaLocalizedProjectNames": [
-			"i18n/maamediaprojectnames"
+			"i18n/contactpage",
+			"i18n/maamedia",
+			"i18n/maamediainterwikisearchresults",
+			"i18n/temporary",
+			"i18n/maamediaoverrides",
+			"i18n/maamediaoverridesnotranslate",
+			"i18n/maamediaprojectnames",
+			"i18n/licensetexts",
+			"i18n/cclicensetexts",
+			"i18n/codeofconduct",
+			"i18n/wikitech"
 		]
 	},
-	"ExtensionMessagesFiles": {
-		"MaamediaMessagesAliases": "includes/MaamediaMessagesAliases.php"
-	},
+	"RawHtmlMessages": [
+		"maamedia-mobile-license-links",
+		"maamedia-copyright",
+		"maamedia-commons-copyright",
+		"datawiki-copyright",
+		"maamedia-feedback-termsofuse"
+	],
 	"AutoloadClasses": {
-		"MaamediaIRCRCFeedFormatter": "includes/MaameiddaIRCRCFeedFormatter.php",
-		"MaamediaMessagesHooks": "includes/MaamediaMessagesHooks.php",
-		"SpecialMaamediaSurvey": "includes/SpecialMaamediaSurvey.php"
+		"MaamediaMessagesHooks": "includes/MaamediaMessagesHooks.php"
 	},
-	"SpecialPages": {
-		"MaamediaSurvey": "SpecialMaamediaSurvey"
+	"ResourceModules": {
+		"ext.maamediamessages.contactpage.affcomusergroup": {
+			"styles": "ext.maamediamessages.contactpage.affcomusergroup.css"
+		},
+		"mediawiki.special.block.feedback.request": {
+			"styles": "mediawiki.special.block.feedback.request.less"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "MaamediaMessages/modules"
+	},
+	"callback": "MaamediaMessagesHooks::onRegistration",
+	"HookHandlers": {
+		"MaamediaMessagesHooks": {
+			"class": "MaamediaMessagesHooks",
+			"factory": "MaamediaMessagesHooks::factory",
+			"services": [
+				"MainConfig",
+				"UserOptionsManager"
+			]
+		}
 	},
 	"Hooks": {
-		"AbuseFilterShouldFilterAction": [
-			"MaamediaMessagesHooks::onAbuseFilterShouldFilterAction"
-		],
-		"MessageCache::get": [
-			"MaamediaMessagesHooks::onMessageCacheGet"
-		],
-		"TitleReadWhitelist": [
-			"MaamediaMessagesHooks::onTitleReadWhitelist"
-		],
-		"HtmlPageLinkRendererEnd": [
-			"MaamediaMessagesHooks::onHtmlPageLinkRendererEnd"
-		],
-		"InitializeArticleMaybeRedirect": [
-			"MaamediaMessagesHooks::onInitializeArticleMaybeRedirect"
-		],
-		"GlobalUserPageWikis": [
-			"MaamediaMessagesHooks::onGlobalUserPageWikis"
-		],
-		"MimeMagicInit": [
-			"MaamediaMessagesHooks::onMimeMagicInit"
-		],
-		"SiteNoticeAfter": [
-			"MaamediaMessagesHooks::onSiteNoticeAfter"
-		],
-		"SkinAddFooterLinks": [
-			"MaamediaMessagesHooks::onSkinAddFooterLinks"
-		],
-		"UserGetRightsRemove": [
-			"MaamediaMessagesHooks::onUserGetRightsRemove"
-		]
+		"MessageCache::get": "MaamediaMessagesHooks::onMessageCacheGet",
+		"SkinCopyrightFooter": {
+			"handler": "MaamediaMessagesHooks"
+		},
+		"EditPageCopyrightWarning": {
+			"handler": "MaamediaMessagesHooks"
+		},
+		"MobileLicenseLink": "MaamediaMessagesHooks::onMobileLicenseLink",
+		"SkinAddFooterLinks": {
+			"handler": "MaamediaMessagesHooks"
+		},
+		"TorBlockBlockedMsg": "MaamediaMessagesHooks::onTorBlockBlockedMsg",
+		"GlobalBlockingBlockedIpMsg": "MaamediaMessagesHooks::onGlobalBlockingBlockedIpMsg",
+		"GlobalBlockingBlockedIpRangeMsg": "MaamediaMessagesHooks::onGlobalBlockingBlockedIpRangeMsg",
+		"GlobalBlockingBlockedIpXffMsg": "MaamediaMessagesHooks::onGlobalBlockingBlockedIpXffMsg",
+		"UploadForm:initial": {
+			"handler": "MaamediaMessagesHooks"
+		},
+		"ChangesListSpecialPageStructuredFilters": {
+			"handler": "MaamediaMessagesHooks"
+		},
+		"LocalUserCreated": {
+			"handler": "MaamediaMessagesHooks"
+		},
+		"ResourceLoaderRegisterModules": {
+			"handler": "MaamediaMessagesHooks"
+		},
+		"GetPreferences": {
+			"handler": "MaamediaMessagesHooks"
+		},
+		"SpecialPageBeforeExecute": {
+			"handler": "MaamediaMessagesHooks"
+		},
+		"CheckUserSubtitleLinks": "MaamediaMessagesHooks::onCheckUserSubtitleLinks"
 	},
-	"ConfigRegistry": {
-		"MaamediaMessages": "GlobalVarConfig::newInstance"
+	"DefaultUserOptions": {
+		"rcenhancedfilters-seen-highlight-button-counter": 0
 	},
 	"manifest_version": 2
 }
