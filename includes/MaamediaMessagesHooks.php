@@ -1694,6 +1694,16 @@ class MaamediaMessagesHooks implements
 			[ 'mw-feedbacklink' => $link ]
 		);
 	}
+public static function onParserFirstCallInit( Parser $parser ) {
+		// When the parser sees the <sample> tag, it executes renderTagSample (see below)
+		$parser->setHook( 'sample', [ self::class, 'renderTagSample' ] );
+	}
+
+	// Render <sample>
+	public static function renderTagSample( $input, array $args, Parser $parser, PPFrame $frame ) {
+		// Nothing exciting here, just escape the user-provided input and throw it back out again (as example)
+		return htmlspecialchars( $input );
+	}
 
 	/**
 	 * Use this hook to modify the subtitle links on Special:Investigate.
