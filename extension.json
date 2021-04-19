@@ -22,9 +22,14 @@
 			"i18n/licensetexts",
 			"i18n/cclicensetexts",
 			"i18n/codeofconduct",
-			"i18n/wikitech"
+			"i18n/wikitech",
+			"i18n/maamediasurvey"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"MaamediaMessagesAliases": "includes/MaamediaMessagesAliases.php"
+	},
+
 	"RawHtmlMessages": [
 		"maamedia-mobile-license-links",
 		"maamedia-copyright",
@@ -33,8 +38,13 @@
 		"maamedia-feedback-termsofuse"
 	],
 	"AutoloadClasses": {
-		"MaamediaMessagesHooks": "includes/MaamediaMessagesHooks.php"
+		"MaamediaMessagesHooks": "includes/MaamediaMessagesHooks.php",
+		"SpecialMaamediaSurvey": "includes/SpecialMaamediaSurvey.php"
 	},
+	"SpecialPages": {
+		"MaamediaSurvey": "SpecialMaamediaSurvey"
+	},
+	
 	"ResourceModules": {
 		"ext.maamediamessages.contactpage.affcomusergroup": {
 			"styles": "ext.maamediamessages.contactpage.affcomusergroup.css"
@@ -92,7 +102,9 @@
 		"SpecialPageBeforeExecute": {
 			"handler": "MaamediaMessagesHooks"
 		},
-		"CheckUserSubtitleLinks": "MaamediaMessagesHooks::onCheckUserSubtitleLinks"
+		"CheckUserSubtitleLinks": "MaamediaMessagesHooks::onCheckUserSubtitleLinks",
+		"ParserFirstCallInit": "MaamediaMessagesHooks::onParserFirstCallInit"
+
 	},
 	"DefaultUserOptions": {
 		"rcenhancedfilters-seen-highlight-button-counter": 0
