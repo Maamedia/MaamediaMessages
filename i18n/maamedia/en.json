@@ -145,6 +145,13 @@
 	"group-wmf-ops-monitoring": "Maamedia Ops Monitoring",
 	"group-wmf-ops-monitoring-member": "{{GENDER:$1|Maamedia Ops Monitoring}}",
 	"grouppage-wmf-ops-monitoring": "meta:Maamedia Technical Operations",
+	"group-rollbacker": "Rollbackers",
+	"group-rollbacker-member": "{{GENDER:$1|rollbacker}}",
+	"group-transwiki": "Transwiki importers",
+	"group-transwiki-member": "transwiki importer",
+	"group-autopatrolled": "Autopatrolleds",
+	"group-autopatrolled-member": "autopatrolled",
+	"grouppage-rollbacker": "{{ns:project}}:Rollbackers",
 	"tag-emoji": "Emoji",
 	"tag-emoji-description": "Used by global abuse filter 110.",
 	"tag-AWB": "[https://en.wikipedia.org/wiki/Wikipedia:AutoWikiBrowser AutoWikiBrowser]",
@@ -189,5 +196,12 @@
 	"group-docseditor": "Documentation editors",
 	"group-docseditor-member": "{{GENDER:$1|documentation editor}}",
 	"action-docseditor": "edit documentation",
-	"right-docseditor": "Edit documentation"
+	"right-docseditor": "Edit documentation",
+	"right-manage-maamedia-legal": "Manage Maamedia legal information",
+	"right-editwiki": "Edit wiki settings, messages and rights",
+	"right-hidden-functions": "Make edits and log functions which leave no trace on the wiki",
+	"group-uploader": "Uploaders",
+	"group-uploader-member": "{{GENDER:$1|uploader}}",
+	"group-import": "Importers",
+	"group-import-member": "{{GENDER:$1|importer}}"
 }
