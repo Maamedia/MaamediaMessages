@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mito"		
+		]
+	},
+	"centralauth-groupname": "Maamedia",
+	"content-model-flow-board": "Jäsennetyt keskustelut-taulu",
+    "maamediamessages-desc": "Maamediassa käytetyt järjestelmäviestit",
+	"maamedia-categories": "Luokat",
+    "maamedia-sidebar-donate": "Lahjoita",
+    "maamedia-donate": "Lahjoita Maamedialle",
+    "maamedia-donatepage": "m:Donate",
+    "maamedia-survey-agree": "Hyväksyn",
+    "maamedia-survey-disagree": "En hyväksy",
+    "group-oversight": "Häivyttäjät",
+    "group-oversight-member": "häivyttäjä",
+    "group-abuse": "Väärinkäyttötiimin jäsenet",
+    "group-abuse-member": "{{GENDER:$1|väärinkäyttötiimin jäsen}}",
+    "group-proxybot": "Proxy Bot",
+    "group-proxybot-member": "proxy bot",
+    "grouppage-proxybot": "m:User:Proxybot",
+ 	"group-translator": "Kääntäjät",
+	"group-translator-member": "kääntäjä",
+	"group-translationadmin": "Käännösylläpitäjät",
+	"group-translationadmin-member": "käännösylläpitäjä",
+ 	"shared-repo-name-shared-commons": "Maamedia Commons-Wiki",
+	"sitematrix": "Luettelo Maamedian wikeistä",
+	"sitematrix-summary": "Tämä toimintosivu on luettelo Maamedian wikeistä.",
+	"sitematrix-desc": "Tämä sivu näyttää [[Special:SiteMatrix|luettelon Maamedian wikeistä]]",
+	"sitematrix-others": "Muut Maamedia-wikit",
+	"sitesupport": "",
+	"sitesupport-url": "",
+	"privacypage": "meta:Privacy Policy",
+	"termsofservice": "Käyttöehdot",
+	"termsofservicepage": "m:Terms of Use",
+	"tooltip-n-sitesupport": "",
+    "maamedia-founder-1": "Puma",
+    "maamedia-founder-2": "Mito",
+    "maamedia-developers": "Maamedia-kehittäjät",
+    "maamedia-cookiestatement": "Evästekäytäntö"
+
+}
