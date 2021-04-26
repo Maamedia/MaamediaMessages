@@ -10,6 +10,12 @@
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
+	"AvailableRights": [
+		"editwiki",
+		"hidden-functions",
+		"manage-maamedia-legal"
+	],
+
 	"MessagesDirs": {
 		"MaamediaMessages": [
 			"i18n/contactpage",
@@ -84,9 +90,6 @@
 		"GlobalBlockingBlockedIpMsg": "MaamediaMessagesHooks::onGlobalBlockingBlockedIpMsg",
 		"GlobalBlockingBlockedIpRangeMsg": "MaamediaMessagesHooks::onGlobalBlockingBlockedIpRangeMsg",
 		"GlobalBlockingBlockedIpXffMsg": "MaamediaMessagesHooks::onGlobalBlockingBlockedIpXffMsg",
-		"UploadForm:initial": {
-			"handler": "MaamediaMessagesHooks"
-		},
 		"ChangesListSpecialPageStructuredFilters": {
 			"handler": "MaamediaMessagesHooks"
 		},
