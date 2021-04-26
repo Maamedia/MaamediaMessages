@@ -8,7 +8,6 @@ use MediaWiki\Config\ServiceOptions;
 use MediaWiki\Hook\EditPageCopyrightWarningHook;
 use MediaWiki\Hook\SkinAddFooterLinksHook;
 use MediaWiki\Hook\SkinCopyrightFooterHook;
-use MediaWiki\Hook\UploadForm_initialHook;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\ResourceLoader\Hook\ResourceLoaderRegisterModulesHook;
@@ -23,6 +22,8 @@ use OOUI\Tag;
  * @file
  * @ingroup Extensions
  */
+ 
+ 
 class MaamediaMessagesHooks implements
 	ChangesListSpecialPageStructuredFiltersHook,
 	EditPageCopyrightWarningHook,
@@ -31,8 +32,7 @@ class MaamediaMessagesHooks implements
 	ResourceLoaderRegisterModulesHook,
 	SkinAddFooterLinksHook,
 	SkinCopyrightFooterHook,
-	SpecialPageBeforeExecuteHook,
-	UploadForm_initialHook
+	SpecialPageBeforeExecuteHook
 {
 
 	/** @var ExtensionRegistry */
@@ -416,16 +416,6 @@ class MaamediaMessagesHooks implements
 	 * @return bool|void True or no return value to continue or false to abort
 	 * @throws ErrorPageError
 	 */
-	public function onUploadForm_initial( $upload ) {
-		$forceUIMsgAsContentMsg = $this->options->get( 'ForceUIMsgAsContentMsg' );
-
-		// TODO inject something to replace use of wfMessage
-		if ( !in_array( 'licenses', $forceUIMsgAsContentMsg )
-			&& wfMessage( 'licenses' )->inContentLanguage()->isDisabled()
-		) {
-			throw new ErrorPageError( 'uploaddisabled', 'maamedia-upload-nolicenses' );
-		}
-	}
 
 	/**
 	 * Override `$wgGrammarForms` for Maamedia sites as a more convenient form
