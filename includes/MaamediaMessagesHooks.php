@@ -92,39 +92,7 @@ class MaamediaMessagesHooks implements
 		global $wgLanguageCode, $wmgRealm, $wgDBname;
 
 		static $keys = [
-			'acct_creation_throttle_hit',
-			'centralauth-contribs-locked',
-			'centralauth-login-error-locked', // T216347
-			'centralauth-groupname', // T86741
-			'centralauth-uwbr-intro',
-			'centralauth-uwbr-registration-nodate',
-			'createacct-helpusername',
-			'createacct-imgcaptcha-help',
-			'delete-toobig', // T139797
-			'discussiontools-replywidget-terms-click',
-			'feedback-termsofuse',
-			'flow-terms-of-use-edit',
-			'flow-terms-of-use-lock-topic',
-			'flow-terms-of-use-new-topic',
-			'flow-terms-of-use-reply',
-			'flow-terms-of-use-summarize',
-			'flow-terms-of-use-unlock-topic',
-			'globalrenamequeue-email-body-approved',
-			'globalrenamequeue-email-body-rejected',
-			'interfaceadmin-info',
-			'ipb-confirmhideuser', // T121639
-			'mwoauth-form-privacypolicy-link',
-			'mobile-frontend-terms-url', // T252375
-			'mwoauthserver-invalid-user',
-			'prefs-user-downloaddata-help-message', // T272412
-			'privacypage',
-			'sidebar',
-			'sitematrix', // T140941
-			'sitematrix-others',
-			'sitematrix-summary',
-			'sulrenamewarning-usenew',
-			'webauthn-module-description', // T248367
-			'webauthn-ui-login-prompt', // T248367
+		   "none-currentyle"
 		];
 
 		static $allbutmetawikikeys = [
@@ -1601,6 +1569,7 @@ class MaamediaMessagesHooks implements
 				'scripts' => [
 					'rcfilters-highlight-tour-hooks.js',
 					'rcfilters-highlight-tour.js',
+					'quickedit.js',
 				],
 				'styles' => 'rcfilters-highlight-tour.less',
 				'messages' => [
