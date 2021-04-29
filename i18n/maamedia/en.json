@@ -221,5 +221,13 @@
 	"group-global-ipblock-exempt": "Global IP block exemptions",
 	"group-global-ipblock-exempt-member": "{{GENDER:$1|global IP block exempt}}",
 	"group-global-renamer": "Global renamers",
-	"group-global-renamer-member": "{{GENDER:$1|global renamer}}"
+	"group-global-renamer-member": "{{GENDER:$1|global renamer}}",
+	"code-rev-purge-link": "purge",
+	"group-autopatroller": "Autopatrollers",
+	"group-autopatroller-member": "{{GENDER:$1|autopatroller}}",
+	"group-abusefilter-helper": "Abuse filter helpers",
+	"group-abusefilter-helper-member": "{{GENDER:$1|abuse filter helper}}",
+	"group-account-creator-team": "Account Creator Team-member",
+	"group-account-creator-team-member": "Account Creator Team-member"
+    
 }
