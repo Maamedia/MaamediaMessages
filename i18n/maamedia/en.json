@@ -110,7 +110,7 @@
 	"restriction-level-banner-protect": "translation administrator and central notice administrator protected",
     "group-massmessage-sender": "Mass message senders",
 	"group-massmessage-sender-member": "{{GENDER:$1|mass message sender}}",
-	"grouppage-massmessage-sender": "{{ns:project}}:Mass message senders",
+	"grouppage-massmessage-sender": "{{ns:project}}:MassMessage senders",
 	"group-new-wikis-importer": "New wikis importers",
 	"group-new-wikis-importer-member": "{{GENDER:$1|new wikis importer}}",
 	"grouppage-new-wikis-importer": "m:New wikis importers",
