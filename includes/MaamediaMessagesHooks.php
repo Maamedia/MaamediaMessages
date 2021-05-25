@@ -316,8 +316,19 @@ class MaamediaMessagesHooks implements
 			[ 'href' => $cookieDestination ],
 			$skin->msg( 'maamedia-cookiestatement' )->text()
 		);
-
 		$footerLinks['cookiestatement'] = $cookieLink;
+		
+		$contactDestination = Skin::makeInternalOrExternalUrl(
+		    $skin->msg( 'maamedia-contact-page' )->inContentLanguage()->text()
+	    );
+	    $contactLink = Html::element(
+	        'a',
+	        [ 'href' => $contactDestination ],
+	        $skin->msg( 'maamedia-contact' )->text()
+	    );
+	    
+	    $footerLinks['contact'] = $contactLink;
+	    
 	}
 
 	/**
