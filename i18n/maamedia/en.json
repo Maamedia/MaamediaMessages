@@ -239,6 +239,7 @@
 	"grouppage-maamedia-supportsafety": "Meta:Maamedia Support and Safety",
 	"maamedia-contact-page": ":maamedia:contact",
 	"maamedia-contact": "Contact to Maamedia",
-	"group-checkuser": "CheckUsers"
-    
+	"group-checkuser": "CheckUsers",
+	"group-ipblock-exempt": "IP block exemptions",
+	"group-ipblock-exempt-member": "{{GENDER:$1|IP block exempt}}"
 }
